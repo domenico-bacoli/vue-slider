@@ -63,6 +63,13 @@
             clearInterval(this.autoPlay);
         },
 
+        restartAutoPlay() {
+            this.autoPlay = setInterval(this.nextSlide, 3000);
+        },
+    },
+
+    mounted() {
+        this.autoPlay;
     },
 
   }).mount('#app')
