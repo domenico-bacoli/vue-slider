@@ -56,7 +56,6 @@
                 this.activeIndex--;
             }
         },
-
     },
 
   }).mount('#app')
