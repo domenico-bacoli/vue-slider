@@ -59,6 +59,10 @@
             }
         },
 
+        stopAutoplay() {
+            clearInterval(this.autoPlay);
+        },
+
     },
 
   }).mount('#app')
