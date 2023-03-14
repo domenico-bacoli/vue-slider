@@ -12,10 +12,8 @@
 <body>
 
     <div id="app">
-
         <div class="container">
-            <div class="slider-wrapper" tabindex="0">
-
+            <div @mouseover="stopAutoPlay()" @mouseout="restartAutoPlay()" class="slider-wrapper" tabindex="0">
                 <div class="item">
                     <img :src="slides[activeIndex].image" alt="immagine corrente" />
                     <div class="text">

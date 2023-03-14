@@ -2,6 +2,7 @@
   const { createApp } = Vue
 
   createApp({
+
     data() {
         return {
 
@@ -34,6 +35,7 @@
             ],
 
             activeIndex: 0,
+            autoPlay: setInterval(this.nextSlide, 3000),  
         }
         
     },
@@ -56,6 +58,7 @@
                 this.activeIndex--;
             }
         },
+
     },
 
   }).mount('#app')
